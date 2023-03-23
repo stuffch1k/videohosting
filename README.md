@@ -1,4 +1,4 @@
-# Videohosing
+# Videohosting
 
 ### Main page
 
