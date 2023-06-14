@@ -1,45 +1,55 @@
 # Videohosting
 
-### Main page
-
-/api/ - GET
 
 ### Authorization
 
-/api/login/ - POST
+/auth/jwt/login - POST
 
+/auth/logout - POST
+
+/auth/register - POST
+
+### User
+
+/users/me - GET
+
+/users/me - PATCH
+
+/users/{id} - GET
+
+/users/{id} - DELETE
+
+/users/{id} - PATCH
+
+### Like
+
+/like/video - GET
+
+/like/liked_videos - GET
+
+/like - POST
 ### Video service
 
-/api/videos/ - GET 
+/video/all - GET 
 
-/api/videos/ - POST
+/video/upload - POST
 
-/api/videos/{category_slug}/ - GET
+/video/watch/ - GET
 
-/api/videos/{category_slug}/ - POST
+/video/edit - PATCH
 
-/api/videos/{id}/ - GET
-
-/api/videos/{id}/ - PATCH
-
-/api/videos/{id}/ - DELETE
+/video/delete/ - DELETE
 
 ### Comment service
 
-/api/videos/{video_id}/comments/ - GET
+/comment/all - GET
 
-/api/videos/{video_id}/comments/ - POST
+/comment/video/ - GET
 
-/api/videos/{video_id}/comments/{comment_id}/ - PATCH
+/comment - POST
 
-/api/videos/{video_id}/comments/{comment_id}/ - DELETE
+/comment - DELETE
 
-### User service
+/comment - PATCH
 
-/api/users/ - GET
 
-/api/users/{id}/ - GET
-
-/api/users/{id}/ - PATCH
-
-/api/users/{id}/ - DELETE
