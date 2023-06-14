@@ -5,7 +5,7 @@
 
 /auth/jwt/login - POST
 
-/auth/logout - POST
+/auth/jwt/logout - POST
 
 /auth/register - POST
 
